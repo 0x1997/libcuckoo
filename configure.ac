@@ -8,10 +8,8 @@ AM_INIT_AUTOMAKE([foreign])
 
 AC_CONFIG_FILES([ Makefile
                   src/Makefile
-                  examples/Makefile
                 ])
 AC_CONFIG_SRCDIR([src/cuckoohash_map.hh])
-AC_CONFIG_SUBDIRS([cityhash-1.1.1 tests])
 AC_CONFIG_MACRO_DIR([m4])
 
 # Empty defaults for flags

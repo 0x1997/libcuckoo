@@ -48,34 +48,7 @@ Building
     $ make
     $ make install
 
-Usage
-==========
 
-To build a program with the hash table, include
-`libcuckoo/cuckoohash_map.hh` into your source file. If you want to
-use CityHash, which we recommend, we have provided a wrapper
-compatible with the `std::hash` type around it in the
-`libcuckoo/city_hasher.hh` file. If compiling with CityHash, add the
-`-lcityhash` flag. You must also enable C++11 features on your
-compiler. Compiling the file `examples/count_freq.cc` with g++
-might look like this:
-
-    $ g++ -std=c++11 examples/count_freq.cc -lcityhash
-
-The
-[examples directory](https://github.com/efficient/libcuckoo/tree/master/examples)
-contains some simple demonstrations of some of the basic features of the hash
-table.
-
-Tests
-==========
-
-The [tests directory](https://github.com/efficient/libcuckoo/tree/master/tests)
-directory contains a number of tests and benchmarks of the hash table, which
-also can serve as useful examples of how to use the table's various features.
-After running `make all`, the entire test suite can be run with the `make check`
-command. This will not run the benchmarks, which must be run individually. The
-test executables, which have the suffix `.out`, can be run individually as well.
 
 Issue Report
 ============
@@ -100,8 +73,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
----------------------------
-
-CityHash (lib/city.h, lib/city.cc) is Copyright (c) Google, Inc. and
-has its own license, as detailed in the source files.
